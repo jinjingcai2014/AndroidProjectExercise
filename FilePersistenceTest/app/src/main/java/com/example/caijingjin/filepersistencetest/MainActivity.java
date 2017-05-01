@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         edit = (EditText)findViewById(R.id.edit);
-        String inputText = Load();
+        String inputText = load();
         if(!TextUtils.isEmpty(inputText)){
             edit.setText(inputText);
             edit.setSelection(inputText.length());
@@ -61,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public String load(){
+    public String load()
+    {
         FileInputStream in = null;
         BufferedReader reader = null;
         StringBuilder content = new StringBuilder();
