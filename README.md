@@ -1,4 +1,4 @@
 # AndroidProjectExercise
 
 本文是第一行代码里面的自己的练习code
-目前更新到第六章的例子
+第三次修改目前更新到第六章的例子
